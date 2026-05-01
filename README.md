@@ -4,6 +4,8 @@
 
 This project is a secure data encryption system built using Python that protects sensitive information using **Fernet symmetric encryption**. It integrates with a MySQL database to securely store encrypted data and ensures that only authorized access with the correct key is possible.
 
+---
+
 ## 🚀 Key Features
 
 * 🔑 **Fernet-based Encryption/Decryption** for strong data security
@@ -12,6 +14,7 @@ This project is a secure data encryption system built using Python that protects
 * 🧾 **Hashing Support** using `hashlib` (for additional security use cases)
 * ⚡ Simple CLI-based execution
 
+---
 
 ## 🛠️ Tech Stack
 
@@ -19,6 +22,7 @@ This project is a secure data encryption system built using Python that protects
 * **Libraries:** cryptography (Fernet), hashlib
 * **Database:** MySQL (mysql-connector-python)
 
+---
 
 ## ⚙️ How It Works
 
@@ -27,26 +31,33 @@ This project is a secure data encryption system built using Python that protects
 3. Encrypted data is saved into MySQL database
 4. Data can only be decrypted using the same key
 
+---
 
 ## 📂 Project Structure
 
+```
 project/
 │── crypto.py        # Main application logic
 │── master.key       # Encryption key (auto-generated, not uploaded)
 │── .gitignore       # Ignore sensitive files
+```
 
+---
 
 ## ⚙️ Installation & Setup
 
 ### 1. Clone Repository
 
+```bash
 git clone https://github.com/your-username/secure-data-encryption-python.git
 cd secure-data-encryption-python
+```
 
 ### 2. Install Dependencies
 
+```bash
 pip install cryptography mysql-connector-python
-
+```
 
 ### 3. Setup MySQL Database
 
@@ -55,14 +66,18 @@ pip install cryptography mysql-connector-python
 
 ### 4. Run the Project
 
+```bash
 python crypto.py
+```
 
+---
 
 ## 🔐 Security Notice
 
 ⚠️ `master.key` is **excluded from this repository** to prevent unauthorized access.
 A new key will be generated automatically when running the program.
 
+---
 
 ## 📊 Example Use Cases
 
@@ -70,6 +85,7 @@ A new key will be generated automatically when running the program.
 * Confidential data protection
 * Basic encryption system for applications
 
+---
 
 ## 🚧 Future Enhancements
 
@@ -78,12 +94,15 @@ A new key will be generated automatically when running the program.
 * Role-based access control
 * Cloud database integration
 
+---
 
 ## 👤 Author
 
 **Yash Ramje**
 
+---
 
 ## ⭐ Support
 
 If you found this project useful, consider giving it a ⭐ on GitHub!
+
